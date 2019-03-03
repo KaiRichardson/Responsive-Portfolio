@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    background: url("../images/background.png");
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* header starts here */
+#header {
+    height: 74px;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+#insideheader {
+    margin: 0 auto;
+    top: 0;
+    height: 74px;
+    width: 960px;
+    position: center;
+    background: #ffffff;
+}
+
+#name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    padding: 20px;
+    top: 0;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+
+#navi {
+    padding-top: 20px;
+    right: 0;
+}
+
+#navi a:not(:first-child) {
+    border-right: 1px solid #777777;
+}
+
+#navi a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #777777;
+}
+
+#navi a:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+#main {
+    flex: 1;
+    margin: 20px auto;
+    width: 900px;
+    background: #ffffff;
+    padding: 0 30px 20px 30px;
+}
+
+#mainhead {
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+    font-weight: bold;
+}
+/* body for 'about' page */
+#mainbody {
+    font-size: 18px;
+    color: #777777;
+}
+
+.textbody {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    white-space: pre-wrap;
+    line-height: 2;
+}
+
+#face {
+    margin: 0px 20px 20px 0px;
+    float: left;
+}
+
+/* body for 'contact' page */
+
+#contactform {
+    white-space: pre-line;
+}
+
+label {
+    color: #777777;
+
+}
+
+input[type=text], textarea {
+    width: 850px;
+    resize: vertical;
+    margin: 5px 0 5px 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 10px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: 0px;
+    padding: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #2b6865;
+}
+
+/* body for 'portfolio' page */
+
+#bucket {
+    width: 65%;
+    height: 800px;
+}
+
+.column {
+    position: relative;
+    margin: 20px 0;
+    width: 45%;
+    float: left;
+    height: 200px;
+}
+
+.column p:hover {
+    background-color: #2b6865;
+}
+
+.column:nth-of-type(even) {
+    float: right;
+}
+
+.column p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#proj1 {
+    background: url("../images/hangman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+ #proj2 {
+    background: url("../images/trivia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+#proj3 {
+    background: url("../images/Rock-Paper-Scissors.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#proj4 {
+    background: url("../images/rpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#proj5 {
+    background: url("../images/app.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* footer starts here */
+#footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    height: 50px;
+    text-align: center;
+}
+
+#foottext {
+    color: #ffffff;
+    font-size: 8px;
+    padding-top: 25px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
