@@ -56,7 +56,7 @@ body {
     background-color: #4aaaa5;
     color: #ffffff;
 }
-
+/* header for each page body */
 #main {
     flex: 1;
     margin: 20px auto;
@@ -73,6 +73,7 @@ body {
     border-bottom: 2px solid #cccccc;
     font-weight: bold;
 }
+
 /* body for 'about' page */
 #mainbody {
     font-size: 18px;
