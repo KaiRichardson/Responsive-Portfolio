@@ -8,34 +8,28 @@ body {
 }
 /* header starts here */
 #header {
-    height: 74px;
+    height: 70px;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
 }
 
 #insideheader {
     margin: 0 auto;
-    top: 0;
-    height: 74px;
     width: 960px;
     position: center;
-    background: #ffffff;
 }
 
 #name {
     font-family: Georgia, 'Times New Roman', Times, serif;
     float: left;
     padding: 20px;
-    top: 0;
     font-size: 30px;
     color: #ffffff;
     background-color: #4aaaa5;
 }
 
-
 #navi {
     padding-top: 20px;
-    right: 0;
 }
 
 #navi a:not(:first-child) {
@@ -76,6 +70,7 @@ body {
 
 /* body for 'about' page */
 #mainbody {
+    margin-top: 20px;
     font-size: 18px;
     color: #777777;
 }
@@ -89,6 +84,7 @@ body {
 #face {
     margin: 0px 20px 20px 0px;
     float: left;
+    height: 300px; 
 }
 
 /* body for 'contact' page */
@@ -103,7 +99,7 @@ label {
 }
 
 input[type=text], textarea {
-    width: 850px;
+    width: 875px;
     resize: vertical;
     margin: 5px 0 5px 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -133,7 +129,7 @@ input[type=submit]:hover {
 .column {
     position: relative;
     margin: 20px 0;
-    width: 45%;
+    width: 250px;
     float: left;
     height: 200px;
 }
@@ -154,7 +150,7 @@ input[type=submit]:hover {
     padding: 20px 0;
     width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
 }
 
 #proj1 {
@@ -164,7 +160,7 @@ input[type=submit]:hover {
 
 }
 
- #proj2 {
+#proj2 {
     background: url("../images/trivia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -211,4 +207,113 @@ input[type=submit]:hover {
     font-size: 8px;
     padding-top: 25px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@media (max-width: 980px) { 
+    #insideheader {
+        width: 730px;
+    }
+
+    #main {
+        width: 670px;
+    }
+
+    /* contact body */
+    input[type=text], textarea {
+        width: 650px;
+    }
+    
+    #bucket {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 768px) {  
+    #insideheader {
+        width: 610px;
+    }
+
+    #main {
+        width: 550px;
+    }
+
+    /* contact body */
+    input[type=text], textarea {
+        width: 525px;
+    }
+
+    #bucket {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 640px) {  
+    #header {
+        height: 110px;
+    }
+    
+    #insideheader {
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #name {
+        float: center;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    #navi {
+        margin-top: 0;
+        padding-top: 82px;
+    }
+    
+    #navi a {
+        display: inline;
+        text-align: center;
+        float: none;
+    }
+
+    #navi a:not(:first-child) {
+        border-right: none;
+        border-left: 1px solid #777777;
+    }
+    
+    /* index body */
+    #main {
+        width: 440px;
+    }
+
+    #face {
+        width: 440px;
+        height: auto;
+    }
+
+    /* contact body */
+
+    input[type=text], textarea {
+        width: 415px;
+    }
+
+    #bucket {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column {
+        position: center;
+        margin: 20px 0;
+        width: 100%;
+        float: left;
+        height: 300px;
+    }
+
+    .column:nth-of-type(even) {
+        float: left;
+    }
+    
 }
